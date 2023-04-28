@@ -1,0 +1,145 @@
+cex@DESKTOP-LQ4KTOI MINGW64 ~/scooter-project (main)
+$ npm run test:coverage
+
+> scooter-project-solution@1.0.0 test:coverage
+> jest --verbose --collect-coverage
+
+Browserslist: caniuse-lite is outdated. Please run:  
+ npx browserslist@latest --update-db
+Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+console.log
+Charge at 55%
+
+      at src/Scooter.js:32:17
+
+console.log  
+ Charge at 60%
+
+      at src/Scooter.js:32:17
+
+console.log
+Charge at 65%
+
+      at src/Scooter.js:32:17
+
+console.log  
+ Charge at 70%
+
+      at src/Scooter.js:32:17
+
+console.log  
+ Charge at 75%
+
+      at src/Scooter.js:32:17
+
+console.log  
+ Charge at 80%
+
+      at src/Scooter.js:32:17
+
+console.log  
+ Charge at 85%
+
+      at src/Scooter.js:32:17
+
+console.log  
+ Charge at 90%
+
+      at src/Scooter.js:32:17
+
+console.log  
+ Charge at 95%
+
+      at src/Scooter.js:32:17
+
+console.log  
+ Charge at 100%
+
+      at src/Scooter.js:32:17
+
+console.log  
+ Repair completed for Scooter #6
+
+      at src/Scooter.js:42:17
+
+PASS tests/Scooter.test.js
+Scooter class
+√ rent() should throw error if charge is less than 20 (10 ms)  
+ √ rent() should throw error if isBroken is true (1 ms)  
+ √ rent() should change user and station property (1 ms)  
+ √ dock() should change station property and set user to null  
+ √ recharge() should increase charge over time (51 ms)  
+ √ requestRepair() should set isBroken to true and then false after 5000ms (4 ms)
+
+FAIL tests/User.test.js  
+ ● Test suite failed to run
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    SyntaxError: C:\Users\cex\scooter-project\tests\User.test.js: Unexpected token (66:13)
+
+      64 |           expect(scooter.isRented()).toBe(true);
+      65 |           });
+    > 66 |           });
+         |              ^
+
+      at Parser._raise (node_modules/@babel/parser/src/parser/error.js:150:45)
+      at Parser.raiseWithData (node_modules/@babel/parser/src/parser/error.js:145:17)
+      at Parser.raise (node_modules/@babel/parser/src/parser/error.js:89:17)
+      at Parser.unexpected (node_modules/@babel/parser/src/parser/util.js:174:16)
+      at Parser.parseExprAtom (node_modules/@babel/parser/src/parser/expression.js:1309:22)
+      at Parser.parseExprSubscripts (node_modules/@babel/parser/src/parser/expression.js:682:23)
+      at Parser.parseUpdate (node_modules/@babel/parser/src/parser/expression.js:662:21)
+      at Parser.parseMaybeUnary (node_modules/@babel/parser/src/parser/expression.js:633:23)
+      at Parser.parseMaybeUnaryOrPrivate (node_modules/@babel/parser/src/parser/expression.js:388:14)
+      at Parser.parseExprOps (node_modules/@babel/parser/src/parser/expression.js:398:23)
+
+FAIL tests/ScooterApp.test.js
+● Test suite failed to run
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+------------|---------|----------|---------|---------|-------------------
+Test Suites: 2 failed, 1 passed, 3 total
+Tests: 6 passed, 6 total
+Snapshots: 0 total
+Time: 1.057 s
+Ran all test suites.
